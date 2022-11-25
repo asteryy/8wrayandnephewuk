@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="move-img">
+        <div class="card-wrapper">
+            <div class="card">
+                <!-- css에서 변수 만들기
+                하이픈(-)을 두 번 사용한 후 변수이름:값
+                변수호출방법 ==> var(변수이름) -->
+                <!-- <h3 style="color: red">테스트</h3> -->
+                <span style="--i:0"></span>
+                <img src="img/iPhone0.jpg" alt="아이폰0">
+                <span style="--i:1"></span>
+                <img src="img/iPhone1.jpg" alt="아이폰1">
+                <span style="--i:2"></span>
+                <img src="img/iPhone2.jpg" alt="아이폰2">
+                <span style="--i:3"></span>
+                <img src="img/iPhone3.jpg" alt="아이폰3">
+                <span style="--i:4"></span>
+                <img src="img/iPhone4.jpg" alt="아이폰4">
+                <span style="--i:5"></span>
+                <img src="img/iPhone5.jpg" alt="아이폰5">
+            </div><!-- //card -->
+        </div><!-- //card-wrapper -->
+    </div><!-- //move-img -->
+
+    <div id="badge" class="badge">
+        <img src="img/badge.png" alt="badge">
+    </div><!-- 이미지 회전 -->
+    <div id="sec2">
+        <h2 class="title">WRAY <br>
+            <span>RESIDENCY</span>
+        </h2>
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide s1">
+                    <div class="hash">
+                        <img src="img/hash.png" alt="#">
+                        WRAYRESIDENCY
+                    </div><!-- //hash -->
+                    <div class="text">
+                        Taking over empty retail units and unusual 
+                        community spaces in your neighborhood,
+                         Uncle Wray lines-up your favourite local 
+                         artists, DJs and Caribbean takeaways;
+                          and turnup in true yard style!<br>
+                        <br>
+                        Tickets are just &pound;5 and includes 
+                        entry to the party, rum cocktails and food 
+                        after the party. With 100% of ticket and 
+                        drink proceeds donated back to local Charities 
+                        that serve our commnities.<br>
+                        <br>
+                        Follow us to be the first to know. 
+                    </div><!-- //text -->
+                    <a href="#" class="link">@WRAYANDNEPHEWUK</a>
+                </div><!-- //swiper-slide -->
+                <div class="swiper-slide s2 t43"> 
+                    <!-- 유튜브 실행 -->
+                    <div id="player1">
+                    </div>
+                    <div class="textbox">
+                        KANO<br>
+                        D DOUBLE E + GHETTS<br>
+                        ELIJAH & SKILLIAM<br><br>
+                        <span>
+                            08.02.20 NEWHAM<br>
+                            LEISURE CENTRE
+                    </div><!-- //textbox -->
+                </div><!-- //swiper-slide -->
+                <div class="swiper-slide s3 t33">
+                    <div class="y_wrap">
+                        <div id="player2"></div>
+                        <div class="youtube_cover"></div>
+                    </div>
+                </div><!-- //swiper-slide -->
+                <div class="swiper-slide s4 t38">
+                    <video src="img/kano-3.mp4" autoplay loop muted></video>
+                </div><!-- //swiper-slide -->
+                <div class="swiper-slide s5 t43">
+                    <img src="img/peckham-1-01.jpg" alt="이미지">
+                    <div class="textbox">
+                        JOE GRIND<br>
+                        STRUGGLE MADE BOOST<br>
+                        PECKHAM RAVER<br>
+                        ASHLEY WALTERS<br><br>
+                        <span>
+                            19.07.19 FORMER BILEX MONEY<br>
+                            TRANSFER SHOP, PECKHAM
+                    </div>
+                </div><!-- //swiper-slide -->
+                <div class="swiper-slide s6 t33">
+                    <img src="img/peckham-1-02.jpg" alt="이미지">
+                </div><!-- //swiper-slide -->
+                <div class="swiper-slide s7 t38">
+                    <img src="img/peckham-1-03.jpg" alt="이미지">
+                </div><!-- //swiper-slide -->
+                <div class="swiper-slide s8 t33">
+                    <img src="img/peckham-1-05.jpg" alt="이미지">
+                </div><!-- //swiper-slide -->
+                <div class="swiper-slide s9 t43">
+                    <img src="img/peckham-1-06.jpg" alt="이미지">
+                </div><!-- //swiper-slide -->
+                <div class="swiper-slide s10 t48">
+                    <img src="img/peckham-2-01.jpg" alt="이미지">
+                    <div class="textbox">
+                        MS BANKS<br>
+                        MONIQUE LAWZ<br>
+                        TE DNESS<br><br>
+                        <span>
+                            04.07.19 FORMER BILEX MONEY<br>
+                            TRANFER SHOP, PECKHAM
+                        </span>
+                    </div>
+                </div><!-- //swiper-slide-->
+                <div class="swiper-slide s11 t33">
+                    <img src="img/peckham-2-02.jpg" alt="이미지">
+                </div><!-- //swiper-slide-->
+                <div class="swiper-slide s12 t33">
+                    <img src="img/peckham-2-03.jpg" alt="이미지">
+                </div><!-- //swiper-slide-->
+                <div class="swiper-slide s13 t43">
+                    <img src="img/peckham-2-04.jpg" alt="이미지">
+                </div><!-- //swiper-slide-->
+                <div class="swiper-slide s14 t33">
+                    <img src="img/peckham-2-05.jpg" alt="이미지">
+                </div><!-- //swiper-slide-->
+            </div><!-- //swiper-wrapper -->
+
+            <!-- If we need scrollbar -->
+            <p class="swiper-txt">CLICK & DRAG SLIDER FOR MORE</p>
+            <div class="swiper-scrollbar"></div>
+        </div>
+    </div><!-- //sec2 -->
+    
+    <div id="sec3">
+        <div class="plan_banner">
+            <div class="top">
+                <video src="img/kano-1.mp4" muted autoplay loop></video>
+            </div>
+        </div>
+    </div><!-- //sec3 -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.3/vanilla-tilt.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"></script>
+    
+    <!-- 유튜브 영상 연결하기(자동재생) -->
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="youtube.js"></script>
+
+    <script>
+        VanillaTilt.init(document.querySelector(".plan_banner"), {
+		max: 25,
+		speed: 400
+	    });
+    </script>
+
+    <script>
+        /* Initialize Swiper */
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+
+            slidesPerView: 'auto',
+
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        });
+        
+        
+        /* function 개똥이(){}
+            console.log("물떠오기")
+        
+        개똥이(); ==> 물떠오기*/
+
+        /* window.addEventListener('scroll',function(){
+            function 개똥이(){}
+            console.log("물떠오기")
+        }) */
+        //위와 아래의 값은 같음.
+        /* window.addEventListener('scroll',개똥이)
+            function 개똥이(){
+            console.log("물떠오기")
+        } */
+
+        window.addEventListener('scroll', scrollRotate)
+
+        function scrollRotate() {
+            /* Top값(스크롤바의 머리가 위에서 얼마나 떨어졌는지)을 나타내줌 */
+            console.log(window.pageYOffset)
+            var badge = document.querySelector('#badge');
+            badge.style.transform = 'rotate(' + (window.pageYOffset / 3) + 'deg)';
+            /* 원을 좀 천천히 돌게 하고 싶으면 나누기, 빠르게 돌게 하고 싶으면 곱하기, 반대로 돌게 하고 싶으면 마이너스. */
+        }
+    </script>
+
+</body>
+
+</html>

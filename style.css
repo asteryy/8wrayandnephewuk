@@ -1,0 +1,196 @@
+@charset "UTF-8";
+*{margin: 0; padding: 0;}
+/* :root {
+    --blue: #1e90ff;
+    --white: #ffffff; 
+}
+
+span{
+    color: var(--blue);
+} */
+
+.t33{top: 33vh;}
+.t38{top: 38vh;}
+.t43{top: 43vh;}
+.t48{top: 48vh;}
+
+
+
+
+.move-img{
+    height: 100vh;
+    display: flex;
+    justify-content: center; align-items: center;   /* 자식을 정가운데에 위치 */
+}
+.move-img .card{
+    position: relative;
+    width: 300px; height: 450px;
+}
+.move-img .card span{
+    position: absolute;
+    left: calc(100%/6 * var(--i));
+    top: 0;
+    width: calc(100%/6);
+    height: 100%;
+}
+.move-img .card img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    pointer-events:none;
+    opacity:0
+}
+.move-img .card img:nth-of-type(1){opacity: 1;}
+/* :nth-child() ==> 부모요소의 모든 자식요소 중 n번째
+:nth-of-type() ==> 부모요소의 특정자식 중 n번째(두 개 이상의 태그가 섞여있을 때) */
+.move-img .card span:hover + img{    /* span에 마우스를 올리면 내 바로 밑 동생인 img는... */
+    opacity: 1;
+} 
+
+/* 이미지회전 */
+.badge{
+    position: absolute;
+    right: 10%; top: 30%;
+    width: 100px; height: 100px;
+}
+.badge img{width: 100%;}
+
+/* swiper */
+#sec2{
+    position: relative;
+    background: #00f;
+    height: 100vh;
+    color: #fff;
+    overflow: hidden;
+}
+#sec2 .title{
+    position: absolute; left: 10vh;
+    font-size: 5vw; /* 보고 있는 화면 넓이의 5% */
+    padding: 10vh 10vw 0;
+}
+#sec2 .title span{}
+
+#sec2 .swiper{}
+#sec2 .swiper .swiper-slide{width: 25%;}
+#sec2 .swiper .swiper-slide.s1{width: 50%;
+    top: 27vh;}
+
+#sec2 .swiper .swiper-slide.s2{width: 50%;}
+#sec2 .swiper .swiper-slide.s3{width: 50%;}
+
+/* 유튜브 영상 크기 작게 잘라서 그냥 영상인 것처럼 보이게 하기 */
+#sec2 .swiper .s3 .y_wrap{
+    position: relative;
+    width: 550px;
+    height: 350px;
+    overflow: hidden;
+}
+#sec2 .swiper .s3 .y_wrap iframe{
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%,-50%) scale(2);
+}
+#sec2 .swiper .s3 .y_wrap .youtube_cover{
+    position: absolute;
+    left: 0; top: 0; width: 100%; height: 100%;
+    background: url(img/video_cover_pattern.png);
+    background-size: 150px;
+    pointer-events: none;
+}
+
+
+
+#sec2 .swiper .swiper-slide .hash{
+    position: absolute;
+    top: 50px; left: 10vw;
+    color: #ffd600;
+    font-size: 30px;
+    transform: rotate(-4deg);
+}
+
+#sec2 .swiper .swiper-slide .hash img{width: 25px;}
+#sec2 .swiper .swiper-slide .text{
+    font-size: 12px; line-height: 1.5;
+    width: 30vw;
+    padding: 15vh 0 0 10vw;
+}
+#sec2 .swiper .swiper-slide .link{
+    position: relative;
+    color: #fff;
+    font-size: 1.4vh;
+    display: inline-block; padding: 20px 0;
+    margin-left: 10vw;
+    margin-top: 10px;
+}
+#sec2 .swiper .swiper-slide .link:before{
+    content: ''; position: absolute;
+    left: 0; bottom: 0;
+    width: 100%; height: 3px;
+    background: #ffd600;
+}
+#sec2 .swiper .swiper-slide .link:after{
+    content: ''; position: absolute;
+    left: 0; bottom: 0;
+    width: 0%; height: 3px;
+    background: #fff;
+    transition: 0.3s
+}
+#sec2 .swiper .swiper-slide .link:hover:after{
+    width: 100%;
+}
+
+#sec2 .swiper .swiper-slide video{
+    width: 65%;    
+}
+#sec2 .swiper .swiper-slide img{
+    width: 65%;
+}
+#sec2 .swiper .swiper-slide .textbox{
+    position: absolute;
+    top: 112px; left: -5vw;
+    background: #ffd600;
+    line-height: 1.5; font-size: 0.9vw;
+    padding: 1vw;
+    border: 2px solid #111;
+}
+#sec2 .swiper-txt{
+    position: absolute;
+    bottom: 7vh; left: 50%;
+    transform: translate(-50%);
+    color: rgba(255,255,255,0.4);
+}
+#sec2 .swiper-scrollbar{
+    position: absolute;
+    bottom: 5vh; left: 50%;
+    transform: translate(-50%);
+    background: rgba(255,255,255,0.4);
+    width: 80%;
+}
+#sec2 .swiper-scrollbar-drag{
+    background: rgba(255,255,255,0.8);
+}
+
+
+/* tilt */
+#sec3{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#sec3 .plan_banner{
+    width: 400px; height: 500px;
+    background: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: perspective(600px); /* 카메라의 위치값(입체감을 주는 방법) */
+    transform-style: preserve-3d; /* 3d가 만들어짐을 알림 */
+}
+#sec3 .plan_banner .top{
+    width: 200px; height: 270px;
+    transform: translateZ(100px);
+    box-shadow: 9px 7px 11px 1px rgba(51,51,51,0.7),
+                2px -9px 11px 1px rgba(51,51,51,0.7);
+}
+#sec3 .plan_banner .top video{width: 100%;}
